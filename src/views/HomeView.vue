@@ -10,6 +10,10 @@
 export default {
   title() {
     return 'Koa Vue SSR'
+  },
+
+  async asyncData ({ store }) {
+    await store.dispatch('slowRequest');
   }
 }
 </script>
