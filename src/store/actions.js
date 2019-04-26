@@ -6,7 +6,7 @@ export default {
       const { data } = await axiosClient.get('/slowRequest')
       // console.log(data);
     } catch (err) {
-      console.log('slowRequest ERROR', err)
+      console.error('slowRequest ERROR')
     }
   }
 }
